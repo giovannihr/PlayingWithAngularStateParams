@@ -1,0 +1,38 @@
+<div>
+    <div class="container-page search-form text-center ">
+        <div class="form-group">
+            <h1>{{vm.htwoMessage}}</h1></div>
+        <div class="form-group">
+            <input type="text" placeholder="city" ng-model="vm.city">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="zip" ng-model="vm.zip">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="min Rent" ng-model="vm.minRent">
+        </div>
+        <div class="form-group">
+            <input type="number" placeholder="max Rent" ng-model="vm.maxRent">
+        </div>
+        <!-- <div class="form-group">
+    <input type="number" placeholder="Bedrooms" ng-model="vm.bedrooms">
+</div>
+<div class="form-group">
+    <input type="number" placeholder="Bathrooms" ng-model="vm.bathrooms">
+</div>
+ -->
+        <div class="form-group">
+            <!-- -->
+            <!-- This page is bind to the searchControler as vm.......check app.js for description   -->
+            <!--  vm.goToDetailsState will save the input values on the searchController and do a $state.go('details') to go to the details state..........-->
+            <!-- -->
+            <!-- vm.goToDetailsState will save the input values on $stateParams....check out searchController.js-->
+            <button ng-click="vm.goToDetailsState()">Search Properties</button>
+        </div>
+    </div>
+    <!-- Nested view practice, don't worry about this part-->
+    <div class="nested-view container-page text-center">
+        <button ui-sref=".sign">Click to see nested view</button>
+        <div ui-view></div>
+    </div>
+</div>

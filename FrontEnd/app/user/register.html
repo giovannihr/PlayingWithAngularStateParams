@@ -1,0 +1,41 @@
+<div class="container-page register-form">
+    <div>
+        <h2 class="dark-grey text-center">Registration</h2>
+        <div class="form-group col-lg-12">
+            <label>Username</label>
+            <input type="text" name="" class="form-control" id="" value="" required ng-model="vm.username">
+        </div>
+        <div class="form-group col-lg-6">
+            <label>Firstname</label>
+            <input type="text" name="" class="form-control" id="" value="" required ng-model="vm.firstname">
+        </div>
+        <div class="form-group col-lg-6">
+            <label>Lastname</label>
+            <input type="text" name="" class="form-control" id="" value="" required ng-model="vm.lastname">
+        </div>
+        <div class="form-group col-lg-6">
+            <label>Email Address</label>
+            <input type="email" name="" class="form-control" id="" value="" required ng-model="vm.email">
+        </div>
+        <div class="form-group col-lg-6">
+            <label>Are you a landlord?</label>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optradio" value="True" ng-model="vm.isManager">Yes</label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optradio" value="False" ng-model="vm.isManager">No</label>
+            </div>
+        </div>
+        <div class="form-group col-lg-6">
+            <input type="checkbox" /> &nbsp; Accept Terms and Conditions
+        </div>
+        <div class="form-group col-lg-6">
+            <button type="submit" class="btn btn-primary" ng-click="vm.register()">Register</button>
+        </div>
+    </div>
+    <div class="container">
+        <p>{{vm.invalidUsername}}</p>
+    </div>
+</div>

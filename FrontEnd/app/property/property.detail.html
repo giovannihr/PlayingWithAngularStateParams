@@ -1,0 +1,22 @@
+<!-- -->
+<!--  This page in bind to the propertyController as pc..........check app.js for description-->
+<!--  -->
+<div class="container">
+    <table id="searchResults" class="table table-bordered ">
+        <tr>
+            <th>property title: </th>
+            <th>city:</th>
+            <th># of bedrooms:</th>
+            <th># of bathrooms:</th>
+            <th>pet friendly? </th>
+        </tr>
+        <!--  Here I access the response in the propertyController and do an ng-repeat to display all results that I got back -->
+        <tr ng-repeat="data in pc.propertyResponse">
+            <td>{{data.propertyName}}</td>
+            <td> {{data.city}}</td>
+            <td> {{data.bedrooms}}</td>
+            <td> {{data.bathrooms}}</td>
+            <td>{{data.petFriendly}}</td>
+        </tr>
+    </table>
+</div>

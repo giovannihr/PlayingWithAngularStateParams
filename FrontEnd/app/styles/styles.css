@@ -1,0 +1,30 @@
+.form-signin,
+.register-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.go-home:hover {
+    cursor: pointer;
+}
+
+.search-form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.search-page-signIn-Link {
+    height: 100px;
+    border-radius: 22px;
+    background-color: lightgray;
+}
+
+.search-page-signIn-Link:hover {
+    cursor: pointer;
+}
+
+.search-page-signIn-Link h3 {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Very Simple To Do List</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <!-- endbower -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/app/styles/styles.css">
+    <!-- endinject -->
+</head>
+
+<body>
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <!-- endbower -->
+    <div class="fullBodyDiv">
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1 ui-sref="CustomSearch" class="go-home">Property Manager</h1>
+                <p>Find the house of your dreams</p>
+            </div>
+        </div>
+        <div ui-view></div>
+    </div>
+    <!-- inject:js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/core/localstorage.factory.js"></script>
+    <script src="/app/core/property.factory.js"></script>
+    <script src="/app/core/user.factory.js"></script>
+    <script src="/app/search/search.controller.js"></script>
+    <script src="/app/property/property.controller.js"></script>
+    <script src="/app/property/property.detail.controller.js"></script>
+    <script src="/app/user/user.controller.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>
